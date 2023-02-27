@@ -1,0 +1,68 @@
+@import '../../../defaultFiles/All_mixins'
+
+.main
+  margin-bottom: 60px
+
+.head
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-left: 200px
+  margin-right: 200px
+  height: 128px
+.heading
+  @include interHeader
+.sortingButtons
+  display: flex
+  gap: 12px
+
+.bodyPart
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-left: 200px
+  margin-right: 200px
+  gap: 45px
+
+.filterPart
+  display: flex
+  flex-direction: column
+  gap: 23px
+  width: 282px
+
+.filterBlock
+  width: 282px
+  display: flex
+  flex-direction: column
+  padding: 24px
+  gap: 24px
+  border: 1px solid rgba(62, 80, 114, 0.16)
+  border-radius: 16px
+
+.filterType
+  display: flex
+  flex-direction: column
+  gap: 16px
+  @include interBase80_16
+
+.sortingButton
+  @include interBase80
+  padding: 10px 20px
+  background: $c_b_surface
+  border-radius: 61px
+
+.sortingButton:hover
+  color: white
+  background-color: $c_dark_blue
+.sortingButton:focus
+  color: white
+  background-color: $c_dark_blue
+
+.bigButton
+  background-color: $c_b_surface
+  border-radius: 8px
+  padding: 12px 24px
+  @include interBase80
+.bigButton:hover
+  background-color: rgba(0, 52, 255, 0.08)

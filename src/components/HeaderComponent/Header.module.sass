@@ -1,0 +1,40 @@
+@import '../../defaultFiles/All_mixins'
+
+.header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  height: 80px
+  padding-left: 200px
+  padding-right: 200px
+  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.12)
+
+.logo
+  width: 94px
+
+.navBar
+  display: flex
+  flex-direction: row
+  gap: 24px
+  margin-right: 650px
+  @include interBase64
+.navBarItem:hover
+  color: #000B26
+  font-weight: 500
+
+.accountNavBar
+  display: flex
+  flex-direction: row
+  gap: 24px
+.item
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 4px
+  @include interBase80
+.locationGroup
+  margin-right: 24px
+.balance
+  font-weight: 600
+  color: black
