@@ -9,9 +9,10 @@ interface CheckBoxArray {
 
 export const CheckBoxArray = ({checkBoxArray}: CheckBoxArray) => {
     return (
+
         <div className={styles.CheckBoxArr}>
             {checkBoxArray.map((checkbox: checkBoxProps) => {
-                return <CheckBox name={checkbox.name}/>
+                return <CheckBox name={checkbox.name} key={checkbox.name}/>
             })}
         </div>
     )

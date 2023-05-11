@@ -1,12 +1,14 @@
-@import '../../../../defaultFiles/All_mixins'
+@import '../../../../Styles/All_mixins'
 
 
 .productBox
   display: flex
   flex-direction: column
   gap: 16px
+
 .productBox:hover
   box-shadow: 0 4px 24px rgba(42, 42, 42, 0.12)
+
 .brandTag
   position: absolute
   margin-top: 24px
@@ -16,13 +18,16 @@
   box-shadow: 0 4px 24px rgba(51, 51, 51, 0.12)
   border-radius: 10px
   @include interBase72
+
 .productInfo
   display: flex
   flex-direction: column
   gap: 5px
   @include interBase88_16
+
 .productType
   @include interBase56_16
+
 .productPrice
   display: flex
   flex-direction: row
@@ -48,6 +53,7 @@
   gap: 8px
   margin-top: 129.5px
   margin-bottom: 89.5px
+
 .balanceBlockInf
   display: flex
   flex-direction: row
@@ -55,11 +61,14 @@
   gap: 4px
   @include interBase64
   color: black
+
 .balance
   @include interBlack
+
 .promoCode
   text-align: center
   @include interBase56
+
 .currency
   width: 16px
   height: 16px
@@ -78,5 +87,6 @@
   @include interBlack
   color: white
   font-weight: 400
+
 .bigButton:hover
   background-color: #07af7d

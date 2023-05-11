@@ -18,7 +18,7 @@ const productArray = [
     {img: nikeAirMax2021, brand: 'NIKE', name: 'Nike Air Max 2021', type: 'Мужская обувь', price: 1000},
     {img: nikeAirMax90Premium, brand: 'NIKE', name: 'Nike Air Max 90 Premium', type: 'Мужская обувь', price: 750},
     {img: adidasAlphabounceRC, brand: 'Adidas', name: 'Adidas Alphabounce RC', type: 'Мужская обувь', price: 1200},
-    {img: hoodyNikeAirMax2021,brand: 'H&M', name: 'Nike Air Max 2021', type: 'Мужская обувь', price: 1000},
+    {img: hoodyNikeAirMax2021, brand: 'H&M', name: 'Nike Air Max 2021', type: 'Мужская обувь', price: 1000},
     {img: nikeAirForce1Low, brand: 'NIKE', name: 'Nike Air Force 1 Low', type: 'Мужская обувь', price: 2100}
 ]
 

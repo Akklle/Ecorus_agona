@@ -4,6 +4,7 @@ import Ecorus from "../../assets/Ecorus.svg";
 import location from "../../assets/location.svg";
 import currency from "../../assets/currency.svg";
 import avatar from "../../assets/avatar.svg";
+import {NavLink} from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -11,10 +12,18 @@ export const Header = () => {
             <img className={styles.logo} src={Ecorus} alt="Ecorus logo"/>
 
             <nav className={styles.navBar}>
-                <a className={styles.navBarItem} href="">Главная</a>
-                <a className={styles.navBarItem} href="">Пункты сбора</a>
-                <a className={styles.navBarItem} href="">ЭкоМаркет</a>
-                <a className={styles.navBarItem} href="">О свервисе</a>
+                <NavLink to="/main" className={styles.navBarItem}>
+                    Главная
+                </NavLink>
+                <NavLink to="/collection-points" className={styles.navBarItem}>
+                    Пункты сбора
+                </NavLink>
+                <NavLink to="/ecomarket" className={styles.navBarItem}>
+                    ЭкоМаркет
+                </NavLink>
+                <NavLink to="/about-service" className={styles.navBarItem}>
+                    О сервисе
+                </NavLink>
             </nav>
 
             <nav className={styles.accountNavBar}>
