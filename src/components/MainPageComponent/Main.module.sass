@@ -1,0 +1,57 @@
+@import '../../Styles/All_mixins'
+
+.smallCard
+  position: relative
+  box-sizing: border-box
+  width: 588px
+  height: 300px
+  background: #FFFFFF
+  border: 1px solid rgba(18, 34, 88, 0.12)
+  border-radius: 16px
+
+.smallCardInfo
+  display: flex
+  flex-direction: column
+  padding: 40px
+
+.smallCardInfoBigText
+  @include interBase40
+
+
+.smallCardInfoSmallText
+  margin-top: 14px
+  width: 255px
+  @include interBase80_16
+  font-weight: 400
+
+.smallCardInfoArrowButton
+  cursor: pointer
+  margin-top: 46px
+  width: 48px
+  height: 48px
+  background: rgba(62, 80, 114, 0.08)
+  border-radius: 8px
+
+.smallCardInfoArrowImage
+  height: 24px
+  width: 24px
+  margin: 12px
+
+.smallCardPicture
+  position: absolute
+  right: 0
+  bottom: 0
+
+.mainPage
+  align-items: center
+  flex-direction: row
+  max-width: 1400px
+  margin: 48px 200px 108px
+  gap: 24px
+  min-width: 1155px
+
+.cards
+  display: flex
+  justify-content: space-between
+  gap: 26px
+  margin-top: 48px

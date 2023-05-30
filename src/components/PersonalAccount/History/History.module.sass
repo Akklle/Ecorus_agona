@@ -1,0 +1,56 @@
+@import '../../../Styles/All_mixins'
+
+
+.componentHistory
+  width: 768px
+  height: 222px
+  border: 1px solid rgba(62, 80, 114, 0.16)
+  border-radius: 20px
+  margin-bottom: 16px
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.centerComponent
+  display: flex
+  width: 680px
+  height: 158px
+  justify-content: space-between
+
+
+.infoHistory
+  display: flex
+  flex-direction: column
+  gap: 16px
+
+.item
+  display: flex
+  flex-direction: column
+  gap: 4px
+
+.nameItem
+  @include interBase64
+  color: rgba($c_t_gray88, 0.4)
+
+.materialItems
+  display: flex
+  gap: 15px
+  align-items: center
+
+.itemProps
+  @include interBase88_16
+  font-weight: 400
+
+.points
+  display: flex
+  align-items: center
+  gap: 8px
+  height: 24px
+  @include interBase64
+  color: black
+
+.historyArr
+  display: flex
+  flex-direction: column
+  gap: 16px

@@ -33,6 +33,7 @@ export const ProductArray = ({productArray}: ProductArrayInterface) => {
                     name={product.name}
                     type={product.type}
                     price={product.price}
+                    key={product.img}
                 />
             })}
         </div>

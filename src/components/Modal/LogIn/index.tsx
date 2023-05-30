@@ -3,10 +3,18 @@ import styles from './Login.module.sass'
 import cross from '../../../assets/cross.svg'
 import {Portal} from '../../Portal'
 import {useModalClose} from "../../../hooks/useModalClose";
+import * as yup from 'yup'
+import {Formik, Form, Field} from "formik";
+
 
 export const LogIn = (props: { visible: boolean, onModalClose: () => void }) => {
     const ref = useRef<HTMLDivElement>(null)
     useModalClose(ref, () => props.onModalClose())
+
+    const validation = yup.object({
+        phone: yup.string().required(),
+        password: yup.string().required(),
+    })
 
     return (<>
         {props.visible &&
@@ -19,13 +27,21 @@ export const LogIn = (props: { visible: boolean, onModalClose: () => void }) => 
                                 <img src={cross} alt="cross"/>
                             </div>
                         </div>
+                        <Formik initialValues={{phone: '', password: ''}}
+                                validationSchema={validation} onSubmit={(values)=>{console.log(values)}}>
+                            {({errors}) => (
+                                <Form className={styles.inputs}>
+                                    <label htmlFor="phone"></label>
+                                    <Field className={styles.input} id="phone" name="phone" placeholder="Телефон"/>
 
-                        <div className={styles.inputs}>
-                            <input type='text' placeholder='Телефон' className={styles.input}/>
-                            <input type='password' placeholder='Пароль' className={styles.input}/>
-                        </div>
+                                    <label htmlFor="password"></label>
+                                    <Field className={styles.input} type={'password'}
+                                           id="password" name="password" placeholder="Пароль"/>
 
-                        <button className={styles.firstButton}>Войти</button>
+                                    <button type={"submit"} className={styles.firstButton }>Войти</button>
+                                </Form>
+                            )}
+                        </Formik>
 
                         <div className={styles.links}>
                             <div className={styles.link}>Войти с помощью смс</div>

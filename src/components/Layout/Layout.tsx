@@ -1,21 +1,16 @@
 import {Outlet} from "react-router-dom";
 import {Header} from "../HeaderComponent/Header";
 import {Footer} from "../FooterComponent/Footer";
+import styles from './Layout.module.sass';
 
 export const Layout = () => {
     return (
-        <div>
-            <header>
-                <Header/>
-            </header>
-
+        <div className={styles.layout}>
+            <Header/>
             <main>
                 <Outlet/>
             </main>
-
-            <footer>
-                <Footer/>
-            </footer>
+            <Footer/>
         </div>
     )
 }

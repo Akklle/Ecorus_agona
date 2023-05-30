@@ -1,0 +1,53 @@
+@import '../../../Styles/All_mixins'
+
+
+.wrapperMain
+  width: 768px
+  height: 110px
+  display: flex
+  gap: 24px
+
+.wrapper
+  display: flex
+  gap: 12px
+
+.info
+  display: flex
+  flex-direction: column
+  gap: 16px
+
+.data, .link
+  display: flex
+  flex-direction: column
+  gap: 4px
+
+.buttonQR
+  padding: 10px 20px
+  background: rgba(62, 80, 114, 0.08)
+  border-radius: 8px
+  height: 40px
+  @include interBase64
+  color: rgba($c_t_gray88, 0.8)
+
+
+.dataTitle, .linkTitle
+  @include interBase64
+  color: rgba($c_t_gray88, 0.4)
+
+.dataProp
+  @include interBase64
+  color: rgba($c_t_gray88, 0.88)
+
+.link:last-child
+  @include interBase64
+  color: $c_green
+
+
+.line
+  margin-top: 24px
+  margin-bottom: 24px
+  border: 1px solid rgba(0, 0, 0, 0.12)
+
+.promoCodeArr
+  display: flex
+  flex-direction: column
